@@ -1,0 +1,176 @@
+.container {
+    width: 100%;
+    height: 105vh;
+    background-color: rgb(244, 254, 255);
+    position: fixed;
+}
+
+.heading {
+    font-size: 35px;
+    background-color: rgb(33, 46, 80);
+    height: 10%;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 1.25%;
+}
+
+.contentDiv {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(244, 254, 255);
+    margin-top: 5px;
+    border-top: 5px solid black;
+}
+
+.inputMenus {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px;
+    margin-top: 5px;
+}
+
+.inputMenus > div {
+    height: 100%;
+}
+
+.maininput, .inputBox {
+    width: 13.4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maininput input, .inputBox input {
+    width: 100%;
+    height: 75%;
+    border: 1px solid black;
+    text-indent: 10px;
+}
+
+input {
+    background-color: rgb(221, 230, 240);
+    font-size: 16px;
+}
+
+.myIcon {
+    width: 6%;
+    background-color: rgb(147, 139, 162);
+    margin-right: 8px;
+    height: 83%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+}
+
+.canvasDiv {
+    width: 99%;
+    height: 85%;
+    border: 2px solid black;
+    background-color: rgb(175, 202, 227);
+    overflow: scroll;
+}
+
+#complexity {
+    height: 55px;
+    width: 32%;
+    background-color: rgb(221, 230, 240);
+    color: black;
+    padding: 5px;
+    border: black solid 1px;
+    display: flex;
+}
+
+#time-complexity, #space-complexity {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+#graph-container {
+	border: 1px solid #ccc;
+	width: 800px;
+	height: 600px;
+	position: relative;
+}
+circle {
+	stroke: black;
+	stroke-width: 2;
+}
+text {
+	font-size: 14px;
+}
+.highlighted {
+	fill: red !important;
+}
+#output {
+	height: 70px;
+	width: 30%;
+	border: black solid 2px;
+	margin-left: 20px;
+}
+
+.btn{
+	height: 70px;
+	width: 10%;
+	font-size: 20px;
+	margin-right: 2%;
+	background-color: #ccc;
+	margin-left: 2%;
+	
+}
+.maininput{
+	/* margin-top: 5%; */
+	/* height: 50px; */
+	width: 10%;
+	font-size: 20px;
+	margin-right: 1%;
+	margin-left: 2%;
+}
+
+.titleBar {
+	width: 100%;
+	height: 10%;
+	background-color: rgb(20, 27, 53);
+	position: sticky;
+}
+
+
+.titleBar nav {
+	width: 70%;
+	height: .5%;
+	float: right;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+.titleBar nav ul {
+	list-style-type: none;
+}
+.titleBar nav ul a{
+	text-decoration: none;
+}
+.titleBar nav li {
+	color: white;
+	padding-right: 50px;
+	font-size: 35px;
+	float: left;
+	margin-bottom: 20%;
+}
+
+
+.titleBar .heading {
+	height: 20%;
+	width: 70%;
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+	background-color: rgb(20, 27, 53);
+	padding-top: 3%;
+	margin-left: 15%;
+}
