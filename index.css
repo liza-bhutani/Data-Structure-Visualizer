@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	/* overflow: hidden; */
+}
+
+.container .bg-image {
+	height: 100%;
+	width: 100%;
+	background-image: url('./IMAGES/Main-bg.jpeg');
+	background-size: cover;
+		background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+.container .bg-image .info {
+	
+	width: 100%;
+	height: 85%;
+	position: absolute;
+}
+
+.container .bg-image .info .infoBox {
+	float: right;
+	position: relative;
+	height: 30%;
+	width: 50%;
+	top: 30%;
+	right: 2%;
+}
+.heading-data>#myBtn{
+	height: 50px;
+	width: 50%;
+	margin-top: 5%;
+	margin-left: 20%;
+	border: rgb(109, 125, 251) solid 2px;
+	background-color: rgb(93, 140, 216) ;
+	border-radius: 30px;
+	font-size: 30px;
+}
+.container .bg-image .info .infoBox>div {
+	display: block;
+	width: 100%;
+}
+
+.container .bg-image .info .infoBox .heading {
+	color: rgb(109, 125, 251);
+	font-size: 40px;
+	margin: 5px 5px 10px 5px;
+	font-weight: 500;
+	font-family: monospace;
+}
+
+.container .bg-image .info .infoBox .heading-data {
+	width: 85%;
+	margin-top: 25px;
+	text-align: justify;
+	color:rgb(93, 140, 216);
+	font-kerning: normal;
+	font-size: 25px;
+}
+
+#content .content {
+	height: 90vh;
+	width: 100%;
+	background-image: linear-gradient(rgb(126, 197, 228),rgb(93, 140, 216));
+	/* padding: 0; */
+}
+
+#content .content .allStructure {
+	display: flex;
+	/* place-items: center; */
+    height: 100%;
+	width: 100%;
+	/* margin-bottom: 20%; */
+	
+}
+
+h1{
+	font-size:50px ;
+	text-align: center;
+	padding-top: 2%;
+
+}
+.box{
+	background-image: linear-gradient(rgb(95, 182, 220),rgb(93, 140, 216));
+	margin-left: 5%;
+    margin-right: 5%;
+	height: 500px;
+	width: 500px;
+	border: black solid 2px;
+	margin-top: 7.5%;
+	text-align: center;
+	font-size: 40px;
+	/* padding-top: 12.5%; */
+	border-radius: 5%;
+}
+.box:hover{
+	transform: translateY(-5px); 
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.box:active{
+	transform: translateY(3px); 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*Footer designing */
+#foter{
+	height: 10vh;
+	width: 100%;
+	background-color: black;
+}
+.footer {
+	/* top: 80%; */
+	display: grid;
+	place-items: center;
+	background-color: black;
+	width: 100%;
+	height: 10%;
+
+}
+
+/* .footer .icon */
+
+.footer .collabration{
+	height: 10%;
+	color: #fff;
+}
+
+
+
+.footer  .names {
+    top: 2%;
+	height: 10%;
+	color: white;
+}
+
+
+
