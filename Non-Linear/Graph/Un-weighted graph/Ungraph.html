@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Visualization with BFS and DFS</title>
+	<link rel="stylesheet" href="./Ungraph.css">
+</head>
+<body>
+	
+    <div class="container">
+		<div class="titleBar">
+			<div
+			style="float: left;width: 10%;display: flex;justify-content: start;align-items: center;background-color: rgb(20, 27, 53);height: 12.1%;">
+			<a href="../graph.html" style="color: aliceblue;margin-left: 10px; margin-top: 60%; text-decoration: none; font-size: 35px;">Back</a>
+		</div>
+		<div class="heading">Un-Weighted Graph</div>
+			<nav>
+				<ul>
+					<a href="../../../index.html"><li>Home</li></a>
+				</ul>
+			</nav>
+		</div>
+		
+		<div class="contentDiv">
+			<div class="inputMenus">
+				<div class="maininput"><input type="text" id="nodes-input" placeholder="Enter nodes (comma-separated)"></div>
+				<div class="maininput"><input type="text" id="edges-input" placeholder="Enter edges (e.g., A-B, B-C)"></div>
+
+			          <button class="btn" id="create-graph-btn">Create Graph</button>
+			          <button class="btn" id="bfs-btn">BFS Traversal</button>
+			         <button class="btn" id="dfs-btn">DFS Traversal</button>
+					 <div id="output" style="margin-left: 5px; font-size: 20px; border: black solid 2px;">
+						<h3>Output:</h3>
+					 </div> 
+ 
+			     </div>
+
+			    <div class="canvasDiv">
+				   <div id="graph-container"></div>
+				</div>
+		    </div>
+		</div>
+
+	
+	</div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./Ungraph.js">
+            </script>
+</body>
+</html>

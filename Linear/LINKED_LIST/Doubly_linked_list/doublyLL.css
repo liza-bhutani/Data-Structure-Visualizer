@@ -1,0 +1,345 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+	--link_color: aqua;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(214, 220, 255);
+	position: fixed;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+
+input::placeholder {
+	color: black;
+}
+
+.sllbox {
+	height: 80%;
+	width: 100%;
+	margin: 0;
+}
+
+.sllbox .inputBoxes {
+	margin-top: -1.6px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	justify-content: center;
+	width: 100%;
+	height: 13%;
+	background-color: rgb(33, 46, 80);
+}
+
+.sllbox .inputBoxes>div {
+	height: 70%;
+	width: 18%;
+	border: 1px solid black;
+}
+
+.sllbox .inputBoxes>div>input {
+	height: 100%;
+	width: 70%;
+	float: left;
+	outline: none;
+	border: none;
+	font-size: 20px;
+	padding: 3px;
+	text-indent: 5px;
+}
+
+.sllbox .inputBoxes>div>p {
+	float: left;
+	height: 100%;
+	width: 30%;
+	outline: none;
+	background-color: maroon;
+}
+
+.sllbox .inputBoxes>div>p img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	mix-blend-mode: darken;
+}
+#complexity {
+	display: flex;
+	height: 70px;
+	/* margin-top: 30px; */
+	background-color: aliceblue;
+	color: black;
+	padding: 10px;
+	/* border-radius: 8px; */
+	align-items: center;
+	background-color:rgb(33, 46, 80);
+  }
+  
+  #time-complexity {
+	padding-top: 12px;
+	height: 50px;
+	width: 20%;
+	border: 2px solid black;
+	font-size: 16px;
+	margin-bottom: 10px;
+	margin-left: 25%;
+	background-color: aliceblue;
+  }
+  #space-complexity{
+	padding-top: 12px;
+	height: 50px;
+	width: 20%;
+	border: 2px solid black;
+	font-size: 16px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+	background-color: aliceblue;
+
+  }
+
+
+.sllbox .linked-list-container {
+	width: 100%;
+	height: 90%;
+	background-color: white;
+	padding: 5px 5px 5px 5px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.sllbox .linked-list-container>.row {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	height: 14.3%;
+}
+
+.sllbox .linked-list-container>.row:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.sllbox .linked-list-container>.row>.item {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	height: 125%;
+	width: 16.67%;
+}
+
+.sllbox .linked-list-container>.row>.item>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: skyblue;
+	height: 80%;
+	width: 33%;
+	border-left: 0.1px;
+	border-right: 0.1px;
+	border-top: 0.1px;
+	border-bottom: 0.1px;
+	border-color: black;
+	border-style: solid;
+	mix-blend-mode: darken;
+}
+
+.left {
+	background-image: url(../../../IMAGES/ll_with_arrow.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 200% 100%;
+	border-left: 0px;
+	border-top: 0.3px;
+	border-bottom: 0.3px;
+	border-right: 0.3px;
+}
+
+.right {
+	background-image: url(../../../IMAGES/ll_with_arrow.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 200% 100%;
+	border-right: 0px;
+	border-left: 0.3px;
+	border-top: 0.3px;
+	border-bottom: 0.3px;
+}
+
+.up {
+	background-image: url(../../../IMAGES/ll_with_arrow_rotate.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100% 200%;
+	border-bottom: 0px;
+	border-top: 0.3px;
+	border-left: 0.3px;
+	border-right: 0.3px;
+}
+
+.down {
+	background-image: url(../../../IMAGES/ll_with_arrow_rotate.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100% 200%;
+	border-top: 0px;
+	border-bottom: 0.3px;
+	border-left: 0.3px;
+	border-right: 0.3px;
+}
+
+.null {
+	background-image: url(../../../IMAGES/null_link.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 140% 120%;
+}
+
+.titleBar {
+	width: 100%;
+	height: 10%;
+	background-color: rgb(20, 27, 53);
+	position: sticky;
+}
+
+
+.titleBar nav {
+	width: 70%;
+	height: 20%;
+	float: right;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+.titleBar nav ul {
+	list-style-type: none;
+}
+.titleBar nav ul a{
+	text-decoration: none;
+}
+.titleBar nav li {
+	color: white;
+	padding-right: 50px;
+	font-size: 35px;
+	float: left;
+}
+.titleBar  #back{
+	float: left;
+	justify-content: start;
+	/* margin-right: 25%; */
+}
+
+.titleBar .heading {
+	height: 50%;
+	width: 70%;
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+	background-color: rgb(20, 27, 53);
+	padding-top: 3%;
+	margin-left: 15%;
+}
+.popup
+{
+	height: 100vh;
+	width: 100%;
+	background-color: rgb(0, 0, 0,0.4);
+	position: absolute;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.popup > .box
+{
+	overflow: hidden;
+	height: 40%;
+	width: 45%;
+	border: 2px solid maroon;
+	background-color: rgb(195, 203, 248);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 30px;
+	border-radius: 23px;
+}
+.popup>.box div:nth-child(1),
+.popup>.box div:nth-child(2)
+{
+	margin-bottom: 2px;
+	width: 100%;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup>.box div:nth-child(2) p
+{
+	padding: 4px;
+	margin: 0px 30px;
+}
+.popup> .box div:nth-child(3)
+{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup .box > div img
+{
+	margin-top: 5px;
+	height: 100%;
+	width: 30%;
+	object-fit: contain;
+	mix-blend-mode: darken;
+}
+.popup>.box div:nth-child(3) button
+{
+	border-radius: 10px;
+	height: 60%;
+	width: 15%;
+	background-color: rgb(33, 49, 100);
+	color: #ffffff;
+	outline: none;
+	border: none;
+	padding: 5px;
+	font-weight: 800;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.sllbox .inputBoxes>div {
+		height: 70%;
+		width: 18%;
+	}
+	.sllbox .linked-list-container>.row>.item>div
+	{
+		font-size: 30px;
+	}
+	.sllbox .linked-list-container>.row
+	{
+		height: 12.7%;
+	}
+}

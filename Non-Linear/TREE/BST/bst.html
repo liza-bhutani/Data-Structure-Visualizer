@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Binary Search Tree</title>
+	<link rel="stylesheet" href="/popup.css" />
+	<link rel="stylesheet" href="./bst.css" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="titleBar">
+			<div style="float: left;width: 10%;display: flex;justify-content: start;align-items: center;background-color: rgb(20, 27, 53);height: 10%;">
+				<a href="../tree.html" style="color: aliceblue;margin-left: 10px; margin-top: 60%; text-decoration: none; font-size: 35px;">Back</a>
+			</div>
+			<div class="heading">Binary Search Tree</div>
+			<nav>
+				<ul>
+					<a href="../../../index.html">
+						<li>Home</li>	
+					</a>
+				</ul>
+			</nav>
+		</div>
+		
+		<div class="contentDiv">
+			<div class="inputMenus">
+				<div class="maininputBox"><input type="text" id="nodeValue" placeholder="Insert node" /></div>
+				<div class="myIcon" onclick="insertUserValue()">&#10004;</div>
+				<div class="inputBox"><input type="number" id="delval" placeholder="Delete node" /></div>
+				<div class="myIcon" onclick="deleteUserValue()">&#128465;</div>
+				<div class="inputBox"><input type="number" id="search" placeholder="Search node" /></div>
+				<div class="myIcon" onclick="searchUserValue()">&#128269;</div>
+				<div id="complexity">
+					<p id="time-complexity">Time complexity:</p>
+					<p id="space-complexity">Space Complexity:</p>
+				  </div>
+				<div class="myIcon bar">&#9776;
+					<div class="traversal">
+						<div class="innerTraversal" onclick="printIn()"><button>InOrder</button></div>
+						<div class="innerTraversal" onclick="printPre()"><button>PreOrder</button></div>
+						<div class="innerTraversal" onclick="printPost()"><button>PostOrder</button></div>
+					</div>
+				</div>
+			</div>
+			<div id="traversal-output" style="margin-top: 20px; font-size: 20px;">
+				<h2>Traversal Output:</h2>
+				<p id="output-text"></p>
+			</div> 
+			
+			<div class="canvasDiv">
+				<canvas id="myBstCanvas" height="20000" width="6000"></canvas>
+			</div>
+		</div>
+		<p id="complexityInfo"></p> <!-- This will show the time and space complexity -->
+	</div>
+
+
+
+	<!-- Link to the external JavaScript file -->
+	<script src="./bst.js"></script>
+	<script src="./printTraversal.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Data Structure Visualization</title>
+	<link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+		<div class="container">
+		<div class="bg-image">
+			<div class="info">
+				<div class="infoBox">
+					<div class="heading">Data Structure Visualization</div>
+					<div class="heading-data">
+						<p>The data structure visualizer aims to visualise and understand data structure algorithms in a fun way  , to go through the functionalities, please click on the explore project button provided below.</p>
+							<button id="myBtn" onclick="scrollToContent()" >Explore Project </button>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="content">
+		<div class="content" >
+			<div id="title"><h1>Data Structure Visualizer</h1>
+			</div>			
+			  <div class="allStructure">
+				<button class="box" id="Linear">Linear Data Structure</button>
+				<button class="box" id="Non-Linear">Non-Linear Data Structure</button>
+				<button class="box" id="Adv">Advance Data Structure Techniques</button>
+				</div>	
+		</div>
+	</section>
+	<section id="foter">
+		<div class="footer">
+			<div class="collabration">Project Done By :</div>
+			<div class="names">Liza(88) , Sargam Chicholikar(59)</div>
+	</div>
+	</section>
+</body>
+
+</html>
+<script>
+	let mybutton = document.getElementById("myBtn");
+
+	
+	function scrollToContent() {
+		// Get the content section by ID
+		let content = document.getElementById("content");
+		// Scroll smoothly to the content section
+		content.scrollIntoView({ behavior: 'smooth' });
+	}
+
+	// Event listener to scroll to content when button is clicked
+	mybutton.addEventListener('click', scrollToContent);
+	document.getElementById('Linear').addEventListener('click', () => {
+		location.href = "Linear/linear.html";
+	});
+	mybutton.addEventListener('click', scrollToContent);
+	document.getElementById('Non-Linear').addEventListener('click', () => {
+		location.href = "Non-Linear/Non-Linear.html";
+	});
+	mybutton.addEventListener('click', scrollToContent);
+	document.getElementById('Adv').addEventListener('click', () => {
+		location.href = "Adv-DSA/Adv-DSA.html";
+	});
+
+		
+</script>
+</script>

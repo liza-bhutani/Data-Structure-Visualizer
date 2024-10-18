@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Merge Sort Visualization</title>
+	<link rel="stylesheet" href="./Mergesort.css" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="titleBar">
+			<div style="float: left;width: 10%;display: flex;justify-content: start;align-items: center;background-color: rgb(20, 27, 53);height: 12.1%;">
+				<a href="../DAC.html" style="color: aliceblue;margin-left: 10px; margin-top: 60%; text-decoration: none; font-size: 35px;">Back</a>
+			</div>
+			<div class="heading">Merge Sort</div>
+			<nav>
+				<ul>
+					<a href="../../../index.html">
+						<li>Home</li>	
+					</a>
+				</ul>
+			</nav>
+		</div>
+		
+		<div class="contentDiv">
+			<div class="inputMenus">
+				<div class="maininputBox">
+					<input type="text" id="nodeValue" placeholder="Insert Array using comma separated" />
+				</div>
+				<div class="myIcon" onclick="startMergeSort()">&#10004;</div>
+				<div id="complexity">
+					<p id="time-complexity">Time complexity:</p>
+					<p id="space-complexity">Space Complexity:</p>
+				</div>
+			</div>
+			
+			<div class="canvasDiv">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Step</th>
+                                <th>Action</th>
+                                <th>Array State</th>
+                                <th>Midpoint</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        </tbody>
+                    </table>
+			</div>
+
+			
+		</div>
+		
+		<p id="complexityInfo"></p>
+	</div>
+	<script src="./Mergesort.js"></script>
+
+</body>
+</html>

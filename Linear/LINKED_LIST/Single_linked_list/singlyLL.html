@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Singly Linked List Data Structure</title>
+	<link rel="stylesheet" href="./singlyLL.css" />
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="titleBar">
+			<div
+			style="float: left;width: 10%;display: flex;justify-content: start;align-items: center;background-color: rgb(20, 27, 53);height: 10%;">
+			<a href="../linked_list.html" style="color: aliceblue;margin-left: 10px; margin-top: 60%; text-decoration: none; font-size: 35px;">Back</a>
+		</div>
+		<div class="heading">Singly Linked List</div>
+			<nav>
+				<ul>
+					<a href="../../../index.html">
+						<li>Home</li>
+					</a>
+					
+				</ul>
+			</nav>
+		</div>
+		
+		<div class="sllbox">
+			<div class="inputBoxes">
+				
+				<div><input type="number" placeholder="insert" id="insertInput" />
+					<p class="btn" id="btnInsert"><img src="../../../IMAGES/insert.png" /></p>
+				</div>
+				<div><input type="number" placeholder="delete" id="deleteInput" />
+					<p class="btn" id="btnDelete"><img src="../../../IMAGES/delete.png" /></p>
+				</div>
+				<div><input type="number" placeholder="search" id="searchInput" />
+					<p class="btn" id="btnSearch"><img src="../../../IMAGES/search.jpg" /></p>
+				</div>
+				
+			</div>
+			<div id="complexity">
+				<p id="time-complexity">Time complexity:</p>
+				<p id="space-complexity">Space Complexity:</p>
+			  </div>
+			<div class="linked-list-container" id="linked-list-container">
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="popup" id="popup">
+		<div class="box">
+			<div><img id="status" src="../../../IMAGES/rightSymbol.jpg" /></div>
+			<div>
+				<p id="msg">Linked_list created Successfully !</p>
+			</div>
+			<div><button id="popup">OK</button></div>
+		</div>
+	</div>
+</body>
+
+</html>
+
+<script src="./singlyLL.js"></script>
+<script >
+	document.getElementById('popup').addEventListener('click',()=>
+	{
+		document.getElementById('popup').style.display="none";
+	});
+	function popup(status , msg)
+	{
+		if(status===null){
+			status=false;
+		}
+		if(msg===null){
+			msg = "Error can't be detected!!";
+		}
+		document.getElementById('popup').style.display="flex";
+		document.getElementById('msg').innerHTML=msg;
+		if(status==true)
+		{
+			document.getElementById('status').src ="../../../IMAGES/rightPopUp.jpg";
+		}
+		else
+		{
+			document.getElementById('status').src ="../../../IMAGES/wrongSymbol.jpg";
+		}
+	}
+</script>
