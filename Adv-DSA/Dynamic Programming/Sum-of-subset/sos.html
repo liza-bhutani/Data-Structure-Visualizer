@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subset Sum Problem Visualization</title>
+    <link rel="stylesheet" href="./sos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="titleBar">
+            <div style="float: left;width: 10%;display: flex;justify-content: start;align-items: center;background-color: rgb(20, 27, 53);height: 10%;">
+				<a href="../Dp.html" style="color: aliceblue;margin-left: 10px; margin-top: 40%; text-decoration: none; font-size: 35px;">Back</a>
+			</div>
+            <div class="heading">
+                <div>Subset Sum Problem</div>
+            </div>
+            <nav>
+                <ul>
+                    <a href="../../../index.html">
+                        <li>Home</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+       
+        
+        <div class="contentBox">
+            <div class="inputs">
+                <h3>Enter elements of the set (comma-separated):</h3>
+                <input type="text" id="setInput" placeholder="e.g. 3, 34, 4, 12, 5, 2">
+                <br><br>
+                <h3>Enter target sum:</h3>
+                <input type="number" id="sumInput" placeholder="Target sum">
+                <br><br>
+                <div id="controls">
+                    <button id="startBtn">Start Visualization</button>
+                    <button id="stopBtn" disabled>Stop Simulation</button>
+                    <button id="resumeBtn" disabled>Resume Simulation</button>
+                </div>
+                <div id="complexity">
+                    <strong>Time Complexity:</strong> <span id="timeComplexity">O(0)</span><br>
+                    <strong>Space Complexity:</strong> <span id="spaceComplexity">O(n * sum)</span>
+                </div>
+            </div>
+            <div class="output" id="output">
+                <table id="dpTable"></table>
+                <div class="explanation" id="explanation">Explanation will appear here...</div>
+                <div id="finalResult"></div>
+            </div>
+        </div>
+    </div>
+<script src="./sos.js"></script>
+</body>
+</html>

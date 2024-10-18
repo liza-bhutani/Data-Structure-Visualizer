@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellman-Ford Algorithm Simulation</title>
+    <link rel="stylesheet" href="./bellman-ford.css">
+     
+</head>
+<body>
+    <div class="container">
+        <div class="titleBar">
+            <div style="float: left;width: 10%;display: flex;justify-content: start;align-items: center;background-color: rgb(20, 27, 53);height: 10%;">
+				<a href="../Dp.html" style="color: aliceblue;margin-left: 10px; margin-top: 40%; text-decoration: none; font-size: 35px;">Back</a>
+			</div>
+            
+            <div class="heading">
+                <div>Bellman-Ford Algorithm Simulation</div>
+            </div>
+                <nav>
+                <ul>
+                    <a href="../../../index.html">
+                        <li>Home</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+                <div class="contentBox">
+            <div class="inputs">
+                <div>
+                    <h3>Input Edges (Format: u v weight)</h3>
+                    <textarea id="edges" rows="30" cols="30" placeholder="0 1 5&#10;0 2 3&#10;1 2 2&#10;1 3 6&#10;2 1 -4&#10;3 0 -1"></textarea>
+                </div>
+                <br>
+                <button id="runBtn" onclick="runBellmanFord()">Run Bellman-Ford</button>
+                <div id="complexity">
+                    <p id="time-complexity">Time complexity:</p>
+                    <p id="space-complexity">Space Complexity:</p>
+                  </div>
+            </div>
+            <div class="output" id="output"></div>
+        </div>
+        <div id="complexity">
+            <p id="time-complexity">Time complexity:</p>
+            <p id="space-complexity">Space Complexity:</p>
+          </div>
+    </div>
+    <script src="./bellman-ford.js"></script>
+</body>
+</html>

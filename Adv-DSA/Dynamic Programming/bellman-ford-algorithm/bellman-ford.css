@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C0C0E0;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.titleBar {
+    display: flex;
+	width: 100%;
+	height: 3%;
+	background-color: rgb(20, 27, 53);
+	position: sticky;
+}
+
+
+.titleBar nav {
+	width: 30%;
+	height: 60%;
+	float: right;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+.titleBar nav ul {
+	list-style-type: none;
+    color: white;
+	padding-right: 50px;
+	font-size: 35px;
+	float: left;
+}
+.titleBar nav ul a{
+	text-decoration: none;
+}
+.titleBar nav ul a li{
+    margin-top: 50%;
+    color: #fff;
+}
+.titleBar  #back{
+	float: left;
+	justify-content: start;
+	/* margin-right: 25%; */
+}
+
+.titleBar .heading {
+	height: 50%;
+	width: 70%;
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+	background-color: rgb(20, 27, 53);
+	padding-top: 3%;  
+	margin-left: 15%;
+}
+
+.contentBox {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* padding: 20px; */
+}
+
+.inputs {
+    flex: 1;
+    background-color: #2C2C5E;
+    padding: 20px;
+    align-items: center;
+
+}
+
+textarea {
+
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+button {
+    margin-left: 25%;
+    padding: 10px 20px;
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.runBtn{
+    align-items: center;
+}
+button:hover {
+    background-color: #660000;
+}
+#complexity {
+	height: 70px;
+	margin-top: 30px;
+	background-color: aliceblue;
+	color: black;
+	padding: 10px;
+	border-radius: 8px;
+  }
+  
+  #time-complexity, #space-complexity {
+	font-size: 16px;
+	margin-bottom: 10px;
+  }
+
+.output {
+    border: #000 2px solid;
+    flex: 2;
+    padding: 20px;
+    background-color: #C0C0E0;
+    min-height: 200px;
+    color: #000;
+}
+
+h3 {
+    
+    color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color:  #C0C0E0;}
