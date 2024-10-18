@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knapsack Problem </title>
+    <link rel="stylesheet" href="./Knapsack.css">
+</head>
+<body>
+    <div class="container">
+        <div class="titleBar">
+            <div style="float: left;width: 10%;display: flex;justify-content: start;align-items: center;background-color: rgb(20, 27, 53);height: 10%;">
+				<a href="../Adv-DSA.html" style="color: aliceblue;margin-left: 10px; margin-top: 40%; text-decoration: none; font-size: 35px;">Back</a>
+			</div>
+            <div class="heading">
+                <div>Knapsack Problem</div>
+            </div>
+            <nav>
+                <ul>
+                    <a href="../../index.html">
+                        <li>Home</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        <div class="contentBox">
+            <div class="inputs">
+                <div>
+                    <h3>Enter Knapsack Capacity:</h3>
+                    <input type="number" id="capacity" placeholder="Capacity">
+                </div>
+                <div>
+                    <h3>Enter Weights (comma-separated):</h3>
+                    <input type="text" id="weights" placeholder="Weights">
+                </div>
+                <div>
+                    <h3>Enter Profits (comma-separated):</h3>
+                    <input type="text" id="profits" placeholder="Profits">
+                </div>
+                <h3>Choose Knapsack Type:</h3>
+                <button id="startButton">0/1 Knapsack</button>
+                <button id="startFractionalButton">Fractional Knapsack</button>
+                <div id="complexity">
+                    <p id="time-complexity">Time Complexity:</p>
+                    <p id="space-complexity">Space Complexity:</p>
+                </div>
+            </div>
+                <div class="output" id="output">
+                    <table id="resultTable"></table>
+            <div id="visualization"></div>
+            <div class="explanation" id="explanation"></div>
+            <div id="finalResult"></div>
+
+
+                </div>
+            
+        </div>
+    </div>
+    <script src="./Knapsack.js"></script>
+</body>
+</html>
